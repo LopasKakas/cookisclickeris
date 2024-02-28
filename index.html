@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Clicker Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cookie Clicker</h1>
+    <div class="cookie-container">
+      <img id="cookie" src="cookie.avif" alt="Cookie" onclick="clickCookie()">
+      <p id="score">Cookies: 0</p>
+    </div>
+    <div class="button-container">
+      <button id="buyAutoClick" onclick="buyAutoClick()">Buy Auto Clicker (10 cookies)</button>
+      <p>Auto Clicker: Automatically generates 1 cookie per second. More clickers - more cookies per second</p>
+      <button id="buyGrandma" onclick="buyGrandma()">Buy Grandma (50 cookies)</button>
+      <p>Grandma: Produces 2 cookies per second. More grandmas - more cookies per second</p>
+      <button id="buyFarm" onclick="buyFarm()">Buy Farm (200 cookies)</button>
+      <p>Farm: Produces 5 cookies per second. More farms - more cookies per second</p>
+      <button id="buyUpgrade" onclick="buyUpgrade()">Buy Upgrade (100 cookies)</button>
+      <p>Upgrade: Doubles the cookies you get per click.</p>
+      <p id="cps">Cookies per Second: 0</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
